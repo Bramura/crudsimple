@@ -1,0 +1,22 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {}
+}
+
+{
+  "name": "PHP 8.2 Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
+  
+  // Configurações opcionais que facilitam a vida no VS Code
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client", // Autocomplete excelente para PHP
+        "xdebug.php-debug"                     // Depuração/Debug
+      ]
+    }
+  },
+
+  // Se precisar de alguma extensão de PHP ou ferramenta extra rodando ao iniciar:
+  "postCreateCommand": "php -v"
+}
